@@ -1,0 +1,151 @@
+/* css reset */
+*{
+    margin:0;
+    padding: 0;
+}
+
+/* css Variables */
+:root{
+    --navbar-height:59px;
+}
+
+/* navigation bar */
+#navbar{
+    display: flex;
+    align-items: center;
+}
+
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+/* Navigation  Bar:LOGO AND IMAGE */
+#logo
+{
+margin:10px 10px;
+}
+
+#logo img{
+    height:56px;
+    margin:34px 45px;
+}
+
+/* Navigation  Bar:List styling */
+
+#navbar{
+    position: relative;
+}
+
+#navbar ul{
+    display: flex;
+}
+
+#navbar ul li{
+    list-style:none;
+    font-size: 1.3rem;
+}
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+}
+
+/* home section */
+#home 
+{
+    display: flex;
+    flex-direction: column;
+    padding-top: 3px 200px;
+    height: 400px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+body 
+{background:url(images/business_2.jpg);
+    background-size: cover;
+}
+
+/* #home ::before
+{
+    content: "";
+    background:url(business_2.jpg) no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.89;
+ } */
+
+
+#home h1{
+    color: orangered;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#home p{
+    color:orangered;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* services section */
+#services{
+    margin: 34px;
+    display: flex;
+}
+#services .box{
+    border:2px solid brown;
+}
+#services .box img{
+    height: 160px;
+    margin:auto;
+    display: block;
+}
+#services{}
+#services{}
+
+
+/* utility classes */
+.h.primary
+{
+    font-size: 3.8rem;
+    padding: 12px;
+
+}
+.h.secondary
+{
+    font-size: 2.8rem;
+    padding: 12px;
+
+}
+.btn{
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: brown;
+    color: white;
+    margin: 17px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.center
+{
+    text-align: centerv;
+}
